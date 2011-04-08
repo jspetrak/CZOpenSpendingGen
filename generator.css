@@ -6,14 +6,41 @@ body {
 	padding: 2em 4em;
 }
 
-form fieldset {
+fieldset {
 	border: 1px solid #B45F04;
+	margin-bottom: 1em;
+	padding-top: 1em;
 }
-form fieldset legend {
+legend {
 	background-color: #F7BE81;
 	border: 1px solid #B45F04;
 	color: #B45F04;
 	padding: 0.25em 0.5em;
+}
+input[type="text"], textarea {
+	border: 1px solid #B45F04;
+	width: 200px;
+}
+span.formlabel {
+	display: block;
+	float: left;
+	text-align: right;
+	width: 250px;
+}
+span.formfield {
+	display: block;
+	float: left;
+	margin: 0;
+	margin-left: 10px;
+	padding: 0;
+	width: 250px;
+}
+span.formbreak {
+	clear: both;
+	display: block;
+	font-size: 1px;
+	margin: 0;
+	padding: 0;
 }
 
 .notice {
