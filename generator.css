@@ -1,0 +1,28 @@
+body {
+	font-family: Ubuntu, Calibri, sans-serif;
+	background-color: white;
+	color: black;
+	margin: 0;
+	padding: 2em 4em;
+}
+
+form fieldset {
+	border: 1px solid #B45F04;
+}
+form fieldset legend {
+	background-color: #F7BE81;
+	border: 1px solid #B45F04;
+	color: #B45F04;
+	padding: 0.25em 0.5em;
+}
+
+.notice {
+	background-color: #F7BE81;
+	border: 1px solid #B45F04;
+	color: #B45F04;
+	font-size: 80%;
+	padding: 0.5em 1em;
+}
+.notice strong {
+	text-transform: uppercase;
+}
