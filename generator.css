@@ -21,6 +21,9 @@ input[type="text"], textarea {
 	border: 1px solid #B45F04;
 	width: 200px;
 }
+textarea#output {
+	width: 450px;
+}
 span.formlabel {
 	display: block;
 	float: left;

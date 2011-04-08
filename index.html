@@ -14,19 +14,19 @@
 
 <h1>Generátor HTML pro veřejné zakázky</h1>
 
-<form>
+<form id="form_gen" action="">
 <fieldset>
 <legend>Informace o zakázce</legend>
 
 <div>
-<span class="formlabel"><label>Zadavatel zakázky:</label></span>
-<span class="formfield"><input type="text" /></span>
+<span class="formlabel"><label for="t_payer">Zadavatel zakázky:</label></span>
+<span class="formfield"><input type="text" id="t_payer" /></span>
 <span class="formbreak">&nbsp;</span>
 </div>
 
 <div>
-<span class="formlabel"><label>Název zakázky:</label></span>
-<span class="formfield"><input type="text" /></span>
+<span class="formlabel"><label for="t_title">Název zakázky:</label></span>
+<span class="formfield"><input type="text" id="t_title" /></span>
 <span class="formbreak">&nbsp;</span>
 </div>
 
@@ -38,7 +38,7 @@
 
 <div>
 <span class="formlabel"><label>Předmět(y) zakázky:</label></span>
-<span class="formfield"><textarea rows="3"></textarea></span>
+<span class="formfield"><textarea rows="3" cols="50"></textarea></span>
 <span class="formbreak">&nbsp;</span>
 </div>
 
@@ -94,7 +94,7 @@
 <legend>Vytvořit</legend>
 <div>
 <span class="formlabel"><label>Druh výstupu:</label></span>
-<span class="formfield"><input type="radio" /> Tabulka <input type="radio" selected="selected" /> Text</span>
+<span class="formfield"><input type="radio" /> Tabulka <input type="radio" checked="checked" /> Text</span>
 <span class="formbreak">&nbsp;</span>
 </div>
 
@@ -102,6 +102,12 @@
 <span class="formlabel">&nbsp;</span>
 <span class="formfield"><input type="button" value="Vytvořit" onclick="generate()" /></span>
 <span class="formbreak">&nbsp;</span>
+</div>
+</fieldset>
+<fieldset>
+<legend>HTML kód</legend>
+<div>
+<textarea id="output" rows="10" cols="50"></textarea>
 </div>
 </fieldset>
 </form>
